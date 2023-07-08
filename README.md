@@ -1,27 +1,51 @@
 # PruebasAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+## Este comando instala globalmente la interfaz de línea de comandos (CLI) de Angular. La CLI de Angular proporciona herramientas para crear, desarrollar y administrar proyectos de Angular.
+```
+npm install -g @angular/cli
+```
 
-## Development server
+## Crea un nuevo proyecto de Angular llamado "pruebas-angular" en un directorio nuevo. Este comando generará la estructura básica del proyecto y descargará las dependencias necesarias.
+```
+ng new pruebas-angular
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Inicia el servidor de desarrollo de Angular y abre la aplicación en el navegador. La opción "-o" se utiliza para abrir automáticamente la aplicación en el navegador predeterminado.
+```
+ng serve -o
+```
 
-## Code scaffolding
+## Ejecuta las pruebas unitarias del proyecto utilizando el marco de pruebas Jasmine. Este comando busca los archivos de prueba con la extensión ".spec.ts" y los ejecuta.
+```
+ng test
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Similar al comando anterior, pero también genera un informe de cobertura de código. El informe muestra qué parte del código fuente está cubierta por las pruebas.
+```
+ng test --code-coverage
+```
 
-## Build
+## Genera un nuevo componente llamado "medico" en la carpeta "integracion-basicas". La opción "--spec=false" indica que no se generen archivos de prueba para el componente. La opción "-is" agrega el estilo en línea al componente.
+```
+ng g c integracion-basicas/medico --spec=false -is
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Genera un nuevo servicio llamado "medico" en la carpeta "integracion-basicas/medico". La opción "--spec=false" indica que no se generen archivos de prueba para el servicio. La opción "--flat" crea el servicio directamente en la carpeta especificada sin crear una subcarpeta adicional para el servicio.
+```
+ng g s integracion-basicas/medico/medico --spec=false --flat
+```
 
-## Running unit tests
+## Genera un nuevo componente llamado "hospital" en la carpeta "integracion-basicas".
+```
+ng g c integracion-basicas/hospital
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Genera un nuevo componente llamado "navbar" en la carpeta "integracion-basicas".
+```
+ng g c integracion-basicas/navbar
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Genera un nuevo componente llamado "router-medico" en la carpeta "integracion-basicas". La opción "-is" agrega el estilo en línea al componente.
+```
+ng g c integracion-basicas/router-medico -is
+```
