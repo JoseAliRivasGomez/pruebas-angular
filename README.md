@@ -1,5 +1,7 @@
 # PruebasAngular
 
+## Comandos Utilizados:
+
 ## Este comando instala globalmente la interfaz de línea de comandos (CLI) de Angular. La CLI de Angular proporciona herramientas para crear, desarrollar y administrar proyectos de Angular.
 ```
 npm install -g @angular/cli
