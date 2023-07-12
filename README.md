@@ -32,11 +32,6 @@ ng serve -o
 ng test
 ```
 
-## Similar al comando anterior, pero también genera un informe de cobertura de código. El informe muestra qué parte del código fuente está cubierta por las pruebas.
-```
-ng test --code-coverage
-```
-
 ## Genera un nuevo componente llamado "medico" en la carpeta "integracion-basicas". La opción "--spec=false" indica que no se generen archivos de prueba para el componente. La opción "-is" agrega el estilo en línea al componente.
 ```
 ng g c integracion-basicas/medico --spec=false -is
@@ -60,4 +55,9 @@ ng g c integracion-avanzadas/navbar
 ## Genera un nuevo componente llamado "router-medico" en la carpeta "integracion-basicas". La opción "-is" agrega el estilo en línea al componente.
 ```
 ng g c integracion-avanzadas/router-medico -is
+```
+
+## jecuta las pruebas unitarias del proyecto, genera un informe de cobertura de código. El informe muestra qué parte del código fuente está cubierta por las pruebas.
+```
+ng test --code-coverage
 ```
