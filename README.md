@@ -54,10 +54,10 @@ ng g c integracion-basicas/hospital
 
 ## Genera un nuevo componente llamado "navbar" en la carpeta "integracion-basicas".
 ```
-ng g c integracion-basicas/navbar
+ng g c integracion-avanzadas/navbar
 ```
 
 ## Genera un nuevo componente llamado "router-medico" en la carpeta "integracion-basicas". La opción "-is" agrega el estilo en línea al componente.
 ```
-ng g c integracion-basicas/router-medico -is
+ng g c integracion-avanzadas/router-medico -is
 ```
