@@ -12,6 +12,16 @@ npm install -g @angular/cli
 ng new pruebas-angular
 ```
 
+## Genera un archivo de configuración de Karma en el proyecto. Al generar el archivo de configuración, puedes personalizar la forma en que Karma ejecutará las pruebas en tu proyecto.
+```
+ng generate config karma
+```
+
+## Instala el paquete karma-firefox-launcher como una dependencia de desarrollo ("-D"). Este paquete proporciona un lanzador para ejecutar pruebas en el navegador Firefox a través de Karma. Al instalarlo, podrás ejecutar las pruebas unitarias en Firefox utilizando Karma como entorno de prueba.
+```
+npm i -D karma-firefox-launcher
+```
+
 ## Inicia el servidor de desarrollo de Angular y abre la aplicación en el navegador. La opción "-o" se utiliza para abrir automáticamente la aplicación en el navegador predeterminado.
 ```
 ng serve -o
